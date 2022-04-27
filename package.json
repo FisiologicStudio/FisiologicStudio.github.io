@@ -1,0 +1,24 @@
+{
+  "name": "fisiologicstudio.github.io",
+  "version": "1.0.0",
+  "description": "Fisiologic Studio website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/style.css -w",
+    "live": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FisiologicStudio/FisiologicStudio.github.io.git"
+  },
+  "author": "Riccardo Ros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FisiologicStudio/FisiologicStudio.github.io/issues"
+  },
+  "homepage": "https://github.com/FisiologicStudio/FisiologicStudio.github.io#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1"
+  }
+}

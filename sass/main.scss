@@ -1,0 +1,60 @@
+@import 'utilities/reset';
+@import 'utilities/mixins';
+@import 'variables/colors';
+@import 'variables/typography';
+@import 'variables/boxModel';
+
+body {
+  font-family: $main-font-family;
+  font-weight: $main-font-weight;
+  line-height: $main-line-height;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: $spacer-6;
+  background: $main-bg-color;
+  background: linear-gradient(
+    135deg,
+    $main-bg-gradient-1 0%,
+    $main-bg-gradient-2 100%
+  );
+  color: $main-text-color;
+  text-align: center;
+  @include flexAlign(center, space-between, column)
+}
+
+.title {
+  font-size: $font-size-xxl;
+  margin-bottom: $spacer-3;
+}
+
+.construction h3 {
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-bold;
+}
+
+.construction h6 {
+  padding-bottom: $spacer-6;
+}
+
+.construction p {
+  padding-bottom: $spacer-3;
+}
+
+a {
+  text-decoration: none;
+  color: $main-text-color;
+  font-weight: $font-weight-bold;
+  border-bottom: 1px solid $main-text-color;
+}
+
+footer {
+  font-size: $font-size-xs;
+}
