@@ -31,7 +31,6 @@
       sizes="192x192"
     />
     <link rel="apple-touch-icon" href="assets/cropped-LogoApp-180x180.png" />
-    <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="canonical" href="https://www.fisiologicstudio.it/" />
     <meta charset="UTF-8" />
@@ -73,38 +72,49 @@
     <script src="script/script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="title">Fisiologic Studio</div>
-      <div class="construction">
-        <h3>UNDER CONSTRUCTION</h3>
-        <h6 class="pb-2">Stiamo lavorando al nuovo sito web.</h6>
-        <p>
-          Per qualsiasi informazione puoi scriverci a
-          <strong>fisiologicstudio@gmail.com</strong> o chiamarci allo
-          <strong>371 140 5586</strong>
-        </p>
-        <p>
-          Visita la nostra pagina su Facebook
-          <a href="https://www.facebook.com/fisiologicstudio/"
-            >FisiologicStudio</a
-          >
-        </p>
-        <!-- <ul>
-          <li>Scriverci a fisiologicstudio@gmail.com</li>
-          <li>Chiamarci allo 371 140 5586</li>
-          <li>
-            Visitare la nostra pagina su Facebook
-            <a href="https://www.facebook.com/fisiologicstudio/"
-              >FisilogicStudio</a
-            >
-          </li>
-        </ul> -->
+    <div class="nav">
+      <div class="nav-logo">
+        Fisiologic Studio
       </div>
-      <div class="text">
+      <div class="nav-menu" id="nav-menu" ontouchend="handleMenuClick()">
+        <ul class="nav-ul">
+          <li class="nav-ul-item"><a href="https://www.facebook.com/fisiologicstudio/">attività</a></li>
+          <li class="nav-ul-item"><a href="https://www.facebook.com/fisiologicstudio/">chi siamo</a></li>
+          <li class="nav-ul-item"><a href="https://www.facebook.com/fisiologicstudio/">contatti</a></li>
+          <li class="nav-ul-item"><a href="https://www.facebook.com/fisiologicstudio/">facebook</a></li>
+        </ul>
+        <div class="nav-callme">
+          <a href="tel:3711405586">Chiama +39 371 140 5586</a>
+        </div>
+        <div class="footer">
+          <strong>Fisiologic Studio</strong>
+          <p>Via Clauzetto 2, 33097 Spilimbergo</p>
+          <footer>
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script> · Fisiologic Studio - Pilates, Fisioterapia,
+            Osteopatia, Pre-Post Parto, Psicologia e Psicoterapia a Spilimbergo -
+            Pordenone
+          </footer>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <button class="nav-btn--click" id="nav-btn" onclick="handleMenuClick()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-logo">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="main-logo-text">Fisiologic Studio</div>
+      </div>
+      <div class="footer">
         <strong>Fisiologic Studio</strong>
         <p>Via Clauzetto 2, 33097 Spilimbergo</p>
         <footer>
-          Copyright &copy; 2021 · Fisiologic Studio - Pilates, Fisioterapia,
+          Copyright &copy; <script>document.write(new Date().getFullYear())</script> · Fisiologic Studio - Pilates, Fisioterapia,
           Osteopatia, Pre-Post Parto, Psicologia e Psicoterapia a Spilimbergo -
           Pordenone
         </footer>

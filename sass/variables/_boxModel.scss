@@ -6,3 +6,11 @@ $spacer-3: $spacer * 1;
 $spacer-4: $spacer * 1.5;
 $spacer-5: $spacer * 2;
 $spacer-6: $spacer * 3;
+
+$border-radius: $spacer-1;
+
+$box-shadow: 0 0 $spacer-2 rgba($black-color, .3);
+$box-shadow-white: 0 0 $spacer-2 rgba($white-color, .5);
+
+$header-height: 4rem;
+

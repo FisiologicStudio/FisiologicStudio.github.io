@@ -1,0 +1,13 @@
+@import '../utilities/mixins';
+@import '../variables/colors';
+@import '../variables/typography';
+@import '../variables/boxModel';
+
+.footer {
+  padding: $spacer;
+  footer {
+    font-size: $font-size-xs;
+    position: relative;
+    z-index: 2;
+  }
+}

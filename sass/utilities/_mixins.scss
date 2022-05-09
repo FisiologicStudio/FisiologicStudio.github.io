@@ -4,3 +4,8 @@
   justify-content: $justify-content;
   flex-direction: $flex-direction;
 }
+
+@mixin backdrop-filter($blur: 10px) {
+  -webkit-backdrop-filter: blur($blur);
+  backdrop-filter: blur($blur);
+}

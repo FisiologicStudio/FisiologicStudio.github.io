@@ -1,0 +1,73 @@
+@import '../utilities/mixins';
+@import '../variables/colors';
+@import '../variables/typography';
+@import '../variables/boxModel';
+
+$circle-width: calc(100vw - #{$spacer * 3});
+
+body {
+  font-family: $main-font-family;
+  font-weight: $main-font-weight;
+  line-height: $main-line-height;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  background: $main-bg-color;
+  background: linear-gradient(
+    135deg,
+    $main-bg-gradient-1 0%,
+    $main-bg-gradient-2 100%
+    );
+  color: $main-text-color;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  padding: $spacer;
+
+  &-logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: $circle-width;
+    @include flexAlign();
+
+    .circle1,
+    .circle2 {
+      width: $circle-width;
+      height: $circle-width;
+      position: absolute;
+      border: 1px solid $white-color;
+      border-radius: 50%;
+      box-shadow: $box-shadow;
+      top: 0;
+    }
+
+    .circle1 {
+      left: $spacer;
+    }
+
+    .circle2 {
+      right: $spacer;
+    }
+  
+    &-text {
+      font-size: $font-size-xxl;
+    }
+  }
+
+
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
