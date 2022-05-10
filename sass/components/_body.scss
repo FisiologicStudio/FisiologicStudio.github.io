@@ -1,4 +1,5 @@
 @import '../utilities/mixins';
+@import '../utilities/functions';
 @import '../variables/colors';
 @import '../variables/typography';
 @import '../variables/boxModel';
@@ -53,10 +54,12 @@ strong {
 
     .circle1 {
       left: $spacer;
+      animation:pulse 3s infinite, circle1movement 3s infinite;
     }
 
     .circle2 {
       right: $spacer;
+      animation:pulse 3s infinite, circle2movement 3s infinite;
     }
   
     &-text {
@@ -69,5 +72,32 @@ strong {
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: $box-shadow;
+  }
+  50% {
+    box-shadow: $box-shadow-white;
+  }
+}
+
+@keyframes circle1movement {
+  0%, 100% {
+    left: $spacer
+  }
+  50% {
+    left: $spacer-2;
+  }
+}
+
+@keyframes circle2movement {
+  0%, 100% {
+    right: $spacer
+  }
+  50% {
+    right: $spacer-2;
   }
 }
